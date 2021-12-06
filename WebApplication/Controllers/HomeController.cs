@@ -17,15 +17,15 @@ namespace WebApplication.Controllers
         {
             _logger = logger;
         }
-
+        
         public IActionResult Index()
         {
             return View();
         }
 
-        public IActionResult Privacy()
+        public IActionResult Lab(int number)
         {
-            return View();
+            return View($"Lab{number}");
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
